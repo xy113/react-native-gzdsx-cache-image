@@ -1,0 +1,19 @@
+{
+  "name": "react-native-gzdsx-cache-image",
+  "version": "1.0.0",
+  "description": "cache image for react-native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "xy113<songdewei@163.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-native": "^0.41.2",
+    "rn-fetch-blob": "^0.10.15"
+  }
+}
