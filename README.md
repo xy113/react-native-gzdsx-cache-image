@@ -1,6 +1,6 @@
 
-# react-native-dsx-cache-image
+# react-native-gzdsx-cache-image
 
 ## Getting started
 
-`$ npm install react-native-dsx-cache-image --save`  
+`$ npm install react-native-gzdsx-cache-image --save`  
