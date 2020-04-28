@@ -1,6 +1,6 @@
 {
   "name": "react-native-gzdsx-cache-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cache image for react-native",
   "main": "index.js",
   "scripts": {

@@ -21,16 +21,16 @@ class CacheImage extends React.Component {
         );
     }
 
-    componentDidMount() {
+
+    componentWillMount() {
         const props = this.props;
         let dirs = RNFetchBlob.fs.dirs;
         let uri = props.source.uri;
         let path = dirs.CacheDir + '/' + sha1(uri);
 
+        this.setState({uri: path});
         RNFetchBlob.fs.exists(path).then((exist) => {
-            if (exist) {
-                this.setState({uri:path});
-            } else {
+            if (!exist) {
                 this.setState({uri});
                 RNFetchBlob.config({
                     path
@@ -42,6 +42,11 @@ class CacheImage extends React.Component {
             this.setState({uri});
             console.log(e);
         });
+    }
+
+
+    componentDidMount() {
+
     }
 }
 
